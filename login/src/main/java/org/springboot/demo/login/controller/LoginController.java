@@ -13,12 +13,20 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private GrpcClientService grpcClientService;
+
 
     @RequestMapping("/test")
     @ResponseBody
     public String testDemo() {
-
         return "Hello World!";
+    }
+
+    @RequestMapping("/testGrpc")
+    @ResponseBody
+    public String testGrpc() {
+        return grpcClientService.sendMessage("test");
     }
 
     @RequestMapping("/getAllUsers")

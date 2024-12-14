@@ -10,8 +10,15 @@ spring:
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
 
-
-  grpc:
+#grpc:
+#  client:
+#    demo-grpc-server:
+#      address: static://127.0.0.1:9000            # gRPC服务地址
+#      negotiationType: plaintext     # 指定是否使用明文连接；
+#      enableKeepAlive: true            # 是否启用KeepAlive机制
+#      keepAliveTime: 30s            # KeepAlive时间
+#      keepAliveTimeout: 5s              # 是否在没有gRPC调用时保持KeepAlive的连接
+grpc:
     client:
       demo-grpc-server:
         address: 'static://127.0.0.1:9000'

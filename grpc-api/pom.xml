@@ -8,7 +8,7 @@
         <artifactId>SpringBootDemo</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-
+    <groupId>org.springboot.demo</groupId>
     <artifactId>grpc-api</artifactId>
 
     <properties>
