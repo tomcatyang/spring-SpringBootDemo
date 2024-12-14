@@ -9,3 +9,12 @@ spring:
       ddl-auto: update
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
+
+
+  grpc:
+    client:
+      demo-grpc-server:
+        address: 'static://127.0.0.1:9000'
+        enableKeepAlive: true
+        keepAliveWithoutCalls: true
+        negotiationType: plaintext

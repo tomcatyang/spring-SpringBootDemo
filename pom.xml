@@ -24,6 +24,9 @@
         <!--启动模块-->
         <module>login</module>
         <module>main</module>
+        <module>grpc-server</module>
+        <module>grpc-api</module>
+        <module>grpc-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
